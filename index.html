@@ -7,14 +7,23 @@
 
     <title>SassUi</title>
     <meta name="description" content="SassUi">
-
-    <link rel="stylesheet" href="dist/app.css">
+    <script src="src/vendor/sassjs/dist/sass.js"></script>
     
 </head>
 
 <body>
     
     <h1>SassUI</h1>
+
+    <script>
+        var someSass = '$someVar: 123px; h1 {width: $someVar; height: $someVar}';
+
+        var sass = new Sass();
+        sass.compile(someSass, function(result){
+            console.log(result);
+        });
+
+    </script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     
