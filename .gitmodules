@@ -1,0 +1,3 @@
+[submodule "src/vendor/Sassjs"]
+	path = src/vendor/Sassjs
+	url = https://github.com/medialize/sass.js.git
